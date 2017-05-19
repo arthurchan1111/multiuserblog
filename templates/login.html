@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Chan">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <title> Login Page</title>
+
+    <style>
+    * {
+    box-sizing: border-box;
+}
+body{
+  background-color: #dcdcdc;
+}
+h3{
+  font-weight: bold;
+}
+.container{
+
+  margin-top: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  width: 70%;
+  padding-bottom: 10%;
+}
+@media screen and (min-width: 992px){
+ #passwordgroup{
+   margin-top:2%;
+ }
+
+#loginbutton{
+  margin-bottom:5%;
+  margin-top: 3%;
+}
+
+.container{
+  padding-bottom: 5%;
+}
+}
+    </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center">Login</h3>
+      <hr>
+      <form method="post" id="loginform">
+
+                    <div class="form-group">
+                    <div class="col-md-12" id="usernamegroup">
+
+                            <label>Username:</label>
+                            <input type="text" class="form-control" name="username" value="{{username}}" placeholder="Username" id="usernameinput">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="col-md-12" id="passwordgroup">
+
+                            <label>Password: </label>
+                            <input type="password" class="form-control" name="password" value="" placeholder="Password">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-default btn-block" id="loginbutton">Log In </button>
+                    </div>
+                    <hr>
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-default btn-block" id="registerNow"> Not a Member? Sign Up </button>
+                    </div>
+                </form>
+
+</div>
+</div>
+
+
+</body>
+
+</html>

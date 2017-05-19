@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Chan">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <title> Main Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="nav">
+        <a href="http://placehold.it"><img src="http://placehold.it/100x100"></a>
+        <h4 class="text-center">Welcome, {{username}}</h4>
+        <ul class="nav nav-pills nav-stacked text-center">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Posts</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+
+
+
+  <div class="container">
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        <h4>Recent Posts</h4>
+        <hr>
+        {% for p in posts %}
+        {{ p.render() | safe }}
+        <br><br>
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>
